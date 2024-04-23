@@ -1,0 +1,10 @@
+<body>
+<header>
+    <h2>Stays in Finland</h2>
+    <p>{{ habitacionesFiltradas.length }} stays</p>
+</header>
+<section>
+    <app-card-habitaciones *ngFor="let datosHabitaciones of habitacionesFiltradas" [Datos]="datosHabitaciones"></app-card-habitaciones>
+</section>
+</body>
+

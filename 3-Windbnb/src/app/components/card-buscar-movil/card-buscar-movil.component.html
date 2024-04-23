@@ -1,0 +1,19 @@
+<section>
+    <div>
+        <div class="header">
+            <p>Edit your search</p>
+            <span class="material-symbols-outlined" (click)="cerrarComponente()">
+                close
+            </span>
+        </div>
+        <div class="card-giltros">
+            <div class="filtros">
+                <app-filtro-localidad></app-filtro-localidad>
+                <app-filtro-personas></app-filtro-personas>
+            </div>
+        </div>
+    </div>
+    <div class="button-buscar">
+        <app-button-buscar (click)="buscarYFiltrar();cerrarComponente()"></app-button-buscar>
+    </div>
+</section>

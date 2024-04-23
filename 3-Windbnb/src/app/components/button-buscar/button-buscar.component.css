@@ -1,0 +1,21 @@
+
+button{
+    width: 127px;
+    height: 48px;
+    border-radius: 16px;
+    background: #EB5757;
+    border: none;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+p{
+    margin: 0;
+    font-family: "Mulish", sans-serif;;
+font-size: 14px;
+font-weight: 700;
+}
+span{
+    margin: 0;
+}

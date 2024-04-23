@@ -1,0 +1,12 @@
+body{
+    padding-top: 25px;
+}
+footer{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+color: #828282;
+margin-top: 50px;
+display: flex;
+justify-content: center;
+}

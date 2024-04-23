@@ -1,0 +1,80 @@
+div {
+  font-family: "Mulish", sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  width: 426px;
+}
+.dropdown * {
+  box-sizing: border-box;
+}
+.select {
+  height: 55px;
+  color: #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding-left: 20px;
+}
+.select-clicked {
+  border: 1px #333333 solid;
+}
+.select:hover {
+  border: 1px #333333 solid;
+}
+.titulo {
+  font-size: 9px;
+  font-weight: 800;
+  color: #333333;
+  text-transform: uppercase;
+}
+.menu {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 20px;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+}
+li {
+  margin-top: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+.selected {
+  font-size: 14px;
+  font-weight: 400;
+}
+p {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 769px) {
+  .dropdown {
+    width: 351px;
+  }
+  .menu {
+    margin-top: 80px;
+  }
+}

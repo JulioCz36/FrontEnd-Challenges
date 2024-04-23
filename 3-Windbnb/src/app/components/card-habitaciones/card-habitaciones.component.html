@@ -1,0 +1,18 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<section>
+    <img src="{{Datos.photo}}" alt="">
+    <div class="media-card">
+        <div class="superHot" *ngIf="Datos.superHost">Super host</div>
+        <p class="descripcion">{{Datos.type}}</p>
+        <div class="div-puntuacion">
+            <span class="material-symbols-outlined">
+                star
+            </span>
+            <p class="puntuacion">{{Datos.rating}}</p>
+        </div>
+    </div>
+    <p class="ubicacion">{{Datos.title}}</p>
+</section>
