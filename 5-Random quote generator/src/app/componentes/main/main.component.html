@@ -1,0 +1,11 @@
+<section>
+    <div class="boton-random">
+        <app-boton-random (click)="busquedaRandom()"></app-boton-random>
+    </div>
+    <div class="main">
+        <app-cita [quoteTextData]="quoteText"></app-cita>
+        <div class="autor-boton">
+            <app-autor-boton [quoteAuthorData]="quoteAuthor" [quoteGenreData]="quoteGenre" (click)="navigateAutor()"></app-autor-boton>
+        </div>
+    </div>
+</section>

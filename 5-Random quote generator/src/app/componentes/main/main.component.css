@@ -1,0 +1,14 @@
+.boton-random {
+  display: flex;
+  justify-content: flex-end;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.autor-boton{
+  margin-left: 25px;
+  margin-top: 70px;
+}

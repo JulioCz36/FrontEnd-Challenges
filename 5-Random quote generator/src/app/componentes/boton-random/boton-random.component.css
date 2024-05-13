@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:  #333333;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+p{
+    margin: 0;
+    margin-right: 10px;
+}
+
+button:active .rotate-center{
+    animation: rotate-center 0.1s;
+    -webkit-animation: rotate-center 0.1s;
+}
+@keyframes rotate-center {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+

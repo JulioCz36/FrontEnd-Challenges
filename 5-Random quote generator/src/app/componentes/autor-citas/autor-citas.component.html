@@ -1,0 +1,9 @@
+<div class="boton-random">
+    <app-boton-random (click)="busquedaRandom()"></app-boton-random>
+</div>
+<section>
+    <div class="autor">
+        <h2>{{autor}}</h2>
+    </div>
+    <app-cita *ngFor="let quote of quotes" [quoteTextData]="quote.quoteText"></app-cita>
+</section>
