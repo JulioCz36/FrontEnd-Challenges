@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<section (click)="handleClick()" 
+         [ngClass]="{'respuesta-seleccionada': quoteData === respuestaSeleccionada, 
+                     'respuesta-correcta': esCorrecta && quoteData === respuestaSeleccionada, 
+                     'respuesta-incorrecta': !esCorrecta && quoteData === respuestaSeleccionada,
+                     'respuesta-incorrecta-correcta': !esCorrecta && quoteData === respuestaCorrecta}"
+                     [class.respuesta-seleccionada]="respuestaSeleccionada !== ''">
+    <p class="letra">{{letraData}}</p>
+    <p class="respuesta">{{quoteData}}</p>
+    <span *ngIf="quoteData === respuestaSeleccionada && esCorrecta || quoteData === respuestaCorrecta && !esCorrecta " class="material-symbols-outlined">check_circle</span>
+    <span *ngIf="quoteData === respuestaSeleccionada && !esCorrecta" class="material-symbols-outlined">cancel</span>
+</section>

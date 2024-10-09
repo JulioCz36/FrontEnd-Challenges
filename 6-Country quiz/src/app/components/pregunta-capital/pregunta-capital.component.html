@@ -1,0 +1,23 @@
+
+    <h2>
+        Country quiz
+    </h2>
+    <section>
+        <img src="../../../assets/img/undraw_adventure_4hum 1.svg" alt="">
+        <article class="card-preguntas" *ngIf="countryData1">
+            <div class="preguntas">
+            <h3>{{ countryData1[0].name.common}} is the capital of</h3>
+            <app-respuesta *ngFor="let Data of datosParaPregunta; let i = index" 
+               [quoteData]="Data" 
+               [letraData]="Letras[i]"
+               (updateRespuesta)="handleRespuestaSeleccionada($event)" 
+               [respuestaSeleccionada]="respuestaSeleccionada"
+               [esCorrecta]="esCorrecta"
+               [respuestaCorrecta]="respuestaCorrecta">
+            </app-respuesta>
+            </div>
+            <div class="boton">
+                <app-boton-next (click)="loQueSigue()"></app-boton-next>
+            </div>
+        </article>
+    </section>
